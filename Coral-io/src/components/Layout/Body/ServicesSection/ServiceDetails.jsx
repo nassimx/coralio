@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import servimg from '../../../../../assets/services.jpeg';
-
+import servimg from '../../../../..//assets/services.jpeg';
+import imgerror from '../../../../../assets/pageerror.png';
 import { useParams } from 'react-router-dom';
 import {
   Container,
@@ -13,10 +13,12 @@ import {
 } from '../../../../globalStyles';
 import { getServiceData } from '../../../../redux/actions/posts';
 import {
+  EncoursImg,
   FeatureTextWrapper,
   FeatureTitle,
   ImgService,
   ServDesc,
+  ServiceIcon,
   Textimagexwrap,
 } from './ServicesSection.Styles';
 export const ServiceDetails = () => {
@@ -48,9 +50,13 @@ export const ServiceDetails = () => {
             <FeatureTitle>{service.subtitle}</FeatureTitle>
           </FeatureTextWrapper>
           <Textimagexwrap>
-            <ImgService src={service.textimage} alt="ghost" />
+            <ServiceIcon>
+              <i className={service.icon}></i>
+            </ServiceIcon>
+            {/* <ImgService src={service.textimage} alt="ghost" /> */}
             <ServDesc>{service.description}</ServDesc>
           </Textimagexwrap>
+          <EncoursImg src={imgerror} alt="En cours de construction" />
         </Container>
       </Section>
     </>

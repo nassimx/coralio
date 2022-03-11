@@ -96,7 +96,9 @@ export const Textimagexwrap = styled.div`
   margin-bottom: 4rem;
 `;
 export const ImgService = styled.img`
-  height: 200px;
+  /* height: 150px; */
+  width: 280px;
+  padding-bottom: 20px;
   padding-right: 20px;
   float: left;
   /* margin-top: 150px; */
@@ -104,6 +106,47 @@ export const ImgService = styled.img`
 `;
 export const ServDesc = styled.h3`
   position: relative;
-  /* padding: 0 0 10px;= */
+  /* padding: 10px 20px 10px 20px; */
   /* margin-bottom: 2rem; */
+
+  font-size: 20px;
+  /* text-align: center; */
+  /* max-width: 600px; */
+  letter-spacing: 1px;
+  /* text-shadow: 0.5px 0.5px; */
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+`;
+
+export const ServiceIcon = styled.div`
+  /* width: 280px; */
+  padding-bottom: 20px;
+  padding-right: 20px;
+  float: left;
+  color: #ff7f50;
+  align-items: center;
+  /* margin-top: 150px; */
+  shape-margin: 15px;
+  font-size: 24px;
+  @media (max-width: 768px) {
+    float: none;
+  }
+`;
+export const EncoursImg = styled.img`
+  /* width: 280px; */
+  padding-bottom: 20px;
+  padding-right: 20px;
+
+  align-items: center;
+  /* margin-top: 150px; */
+  shape-margin: 15px;
+  font-size: 24px;
+  @media (max-width: 768px) {
+    max-width: 280px;
+  }
 `;

@@ -54,7 +54,7 @@ const Footer = () => {
         return (
           <FooterContainer key={index}>
             <FooterWrap>
-              <FooterLinksContainer>
+              {/* <FooterLinksContainer>
                 <FooterLinksWrapper>
                   <FooterLinkItems>
                     <FooterLinkTitle>Accueil</FooterLinkTitle>
@@ -85,7 +85,7 @@ const Footer = () => {
                     <FooterLink to="/contact">Contact</FooterLink>
                   </FooterLinkItems>
                 </FooterLinksWrapper>
-              </FooterLinksContainer>
+              </FooterLinksContainer> */}
 
               <SocialMedia>
                 <SocialMediaWrap>
