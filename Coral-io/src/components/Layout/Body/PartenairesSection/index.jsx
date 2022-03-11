@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
-// import { data } from '../../../../data/FourthSectionData';
 import { Row, Heading, Section, TextWrapper } from '../../../../globalStyles';
 import {
   ButtonContainer,
@@ -80,7 +79,6 @@ const PartenairesSection = () => {
             <TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
               {el.description}
             </TextWrapper>
-            {/* <CardButton>Learn More</CardButton> */}
           </ImageWrapper>
         ))}
       </ReviewSlider>

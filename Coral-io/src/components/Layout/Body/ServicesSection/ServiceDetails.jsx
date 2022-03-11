@@ -12,7 +12,13 @@ import {
   ServImgBg,
 } from '../../../../globalStyles';
 import { getServiceData } from '../../../../redux/actions/posts';
-import { FeatureTextWrapper, FeatureTitle } from './ServicesSection.Styles';
+import {
+  FeatureTextWrapper,
+  FeatureTitle,
+  ImgService,
+  ServDesc,
+  Textimagexwrap,
+} from './ServicesSection.Styles';
 export const ServiceDetails = () => {
   const params = useParams();
   console.log(params._id);
@@ -39,8 +45,12 @@ export const ServiceDetails = () => {
       <Section smPadding="50px 10px" position="relative" inverse>
         <Container>
           <FeatureTextWrapper>
-            <FeatureTitle>{service.name}</FeatureTitle>
+            <FeatureTitle>{service.subtitle}</FeatureTitle>
           </FeatureTextWrapper>
+          <Textimagexwrap>
+            <ImgService src={service.textimage} alt="ghost" />
+            <ServDesc>{service.description}</ServDesc>
+          </Textimagexwrap>
         </Container>
       </Section>
     </>

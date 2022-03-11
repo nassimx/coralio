@@ -88,3 +88,22 @@ export const LinkService = styled(LinkServ)`
     border-bottom: 3px solid #01bf71;
   }
 `;
+
+export const Textimagexwrap = styled.div`
+  max-width: 1200px;
+  position: relative;
+  padding: 0 0 20px;
+  margin-bottom: 4rem;
+`;
+export const ImgService = styled.img`
+  height: 200px;
+  padding-right: 20px;
+  float: left;
+  /* margin-top: 150px; */
+  shape-margin: 15px;
+`;
+export const ServDesc = styled.h3`
+  position: relative;
+  /* padding: 0 0 10px;= */
+  /* margin-bottom: 2rem; */
+`;
