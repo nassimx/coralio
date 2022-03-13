@@ -3,17 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const FooterContainer = styled.footer`
-  background: #232526; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #414345,
-    #232526
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #414345,
-    #232526
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d1ccc0;
 `;
 export const FooterWrap = styled.div`
   padding: 48px 28px;
@@ -111,7 +101,7 @@ export const SocialLogo = styled(LinkR)`
 `;
 
 export const WebsiteRights = styled.small`
-  color: white;
+  color: black;
   margin-bottom: 16px;
 `;
 

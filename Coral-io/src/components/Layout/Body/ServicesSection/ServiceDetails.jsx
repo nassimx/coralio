@@ -21,9 +21,10 @@ import {
   ServiceIcon,
   Textimagexwrap,
 } from './ServicesSection.Styles';
+import Footer from '../../Footer';
 export const ServiceDetails = () => {
   const params = useParams();
-  console.log(params._id);
+  // console.log(params._id);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -32,7 +33,7 @@ export const ServiceDetails = () => {
 
   const services = useSelector((state) => state.services);
   const service = services.find(
-    (service) => service._id.toString() === params._id
+    (service) => service.to.toString() === params.to
   );
 
   // console.log(service);
@@ -59,6 +60,7 @@ export const ServiceDetails = () => {
           <EncoursImg src={imgerror} alt="En cours de construction" />
         </Container>
       </Section>
+      <Footer />
     </>
   );
 };

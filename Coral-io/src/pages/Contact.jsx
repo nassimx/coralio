@@ -8,22 +8,17 @@ import img from '../../assets/1080px.jpeg';
 
 import ContainerContact from '../components/Contact/Container';
 
-import CompanyInfo from './Form/CompanyInfo';
-import ContactForm from '../pages/Form/ContactForm';
+import CompanyInfo from '../components/Form/CompanyInfo';
+import ContactForm from '../components/Form/ContactForm';
 
 import MapSection from '../components/Map/Map'; // import the map here
 
-import {
-  Container,
-  HeroBg,
-  HeroContainer,
-  ImgBg,
-  Section,
-} from '../globalStyles';
+import { HeroBg, HeroContainer, ImgBg, Section } from '../globalStyles';
 import {
   FeatureTextWrapper,
   FeatureTitle,
 } from '../components/Layout/Body/ServicesSection/ServicesSection.Styles';
+import Footer from '../components/Layout/Footer';
 
 const location = {
   address: '231 Rue St Honoré, 75001 Paris, France',
@@ -54,6 +49,7 @@ const Contact = () => {
           <MapSection location={location} zoomLevel={16} />
         </ContactContainer>
       </Section>
+      <Footer />
     </>
   );
 };

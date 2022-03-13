@@ -1,7 +1,7 @@
 import Hero from '../components/Layout/Body/HeroSection';
 import ServicesSection from '../components/Layout/Body/ServicesSection';
 import { ClientsSection } from '../components/Layout/Body/ClientsSection';
-// import Footer from '../components/Layout/Footer';
+import Footer from '../components/Layout/Footer';
 // import { homeObjOne } from '../data//FirstSectionData';
 // import { heroOne, heroThree, heroTwo } from '../data/ThirdSectionData';
 import { motion } from 'framer-motion';
@@ -24,7 +24,7 @@ const Home = () => {
         <ThirdSection /> */}
         <PartenairesSection />
 
-        {/* <Footer /> */}
+        <Footer />
       </motion.div>
     </>
   );

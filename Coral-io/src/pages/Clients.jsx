@@ -8,9 +8,9 @@ import {
   ImgBg,
   Section,
 } from '../globalStyles';
-import { data } from '../data/FourthSectionData';
+
 import ClientBg from '../../assets/1.jpeg';
-import { ContactTitle } from '../components/Contact/ContactStyle';
+
 import {
   FeatureColumn,
   FeatureImageWrapper,
@@ -23,6 +23,7 @@ import {
 } from '../components/clientpagestyles/Clients.Styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { getClients } from '../redux/actions/posts';
+import Footer from '../components/Layout/Footer';
 
 const Clients = () => {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ const Clients = () => {
   }, [dispatch]);
 
   const clients = useSelector((state) => state.clients);
-  console.log(clients);
+  // console.log(clients);
   const initial = {
     y: 40,
     opacity: 0,
@@ -81,6 +82,8 @@ const Clients = () => {
           </ClientsWrapper>
         </Container>
       </Section>
+      <Footer/>
+
     </>
   );
 };

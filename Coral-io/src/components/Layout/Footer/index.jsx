@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react';
-import { FaFacebook, FaMailBulk } from 'react-icons/fa';
 import {
   FooterContainer,
-  FooterLink,
-  FooterLinkItems,
-  FooterLinkS,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkTitle,
+  // FooterLink,
+  // FooterLinkItems,
+  // FooterLinkS,
+  // FooterLinksContainer,
+  // FooterLinksWrapper,
+  // FooterLinkTitle,
   FooterWrap,
   LogoFooter,
   // Maploc,
@@ -20,8 +19,6 @@ import {
 } from './Footer.Style';
 
 import logoFooter from '../../../../assets/cropped-logo_coralio-6.png-6.png';
-import { AiOutlineLinkedin } from 'react-icons/ai';
-import { GrLinkedin, GrMail } from 'react-icons/gr';
 import { animateScroll as scroll } from 'react-scroll';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContact } from '../../../redux/actions/posts';
@@ -101,21 +98,21 @@ const Footer = () => {
                       target="_blank"
                       aria-label="Linkedin"
                     >
-                      <GrLinkedin />
+                      <i className="fa-brands fa-linkedin fa-lg" />
                     </SocialIconLink>
                     <SocialIconLink
                       href="https://www.facebook.com/coralio.fr"
                       target="_blank"
                       aria-label="Facebook"
                     >
-                      <FaFacebook />
+                      <i className="fa-brands fa-facebook-square fa-lg" />
                     </SocialIconLink>
                     <SocialIconLink
                       href={`mailto:${el.email}`}
                       target="_blank"
                       aria-label="Mail"
                     >
-                      <GrMail />
+                      <i className="fa-solid fa-envelope fa-lg" />
                     </SocialIconLink>
                   </SocialIcons>
                 </SocialMediaWrap>

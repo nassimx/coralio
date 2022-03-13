@@ -1,5 +1,5 @@
 import React from 'react';
-import { GrLanguage } from 'react-icons/gr';
+
 import {
   SidebarContainer,
   Icon,
@@ -7,12 +7,11 @@ import {
   SidebarMenu,
   SideBarWrapper,
   SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
+  // SideBtnWrap,
+  // SidebarRoute,
   ContactSidebarLink,
 } from './SidebarStyles';
 import { animateScroll as scroll } from 'react-scroll';
-import { Link } from 'react-router-dom';
 
 const Sidebar = ({ isOpen, toggle }) => {
   const toggleHome = () => {
@@ -43,7 +42,6 @@ const Sidebar = ({ isOpen, toggle }) => {
               duration={1000}
               spy={true}
               offset={-80}
-
               onClick={toggle}
             >
               Nos Services
@@ -56,12 +54,7 @@ const Sidebar = ({ isOpen, toggle }) => {
               offset={-80}
               onClick={toggle}
             >
-              <Link
-                to="/clients"
-                style={{ textDecoration: 'none', color: 'black' }}
-              >
-                Nos Clients
-              </Link>
+              Nos Clients
             </SidebarLink>
             <SidebarLink
               to="partenaires"
@@ -76,11 +69,11 @@ const Sidebar = ({ isOpen, toggle }) => {
 
             <ContactSidebarLink to="/contact">Nous Écrire</ContactSidebarLink>
           </SidebarMenu>
-          <SideBtnWrap>
+          {/* <SideBtnWrap>
             <SidebarRoute to="/" onClick={toggle}>
               <GrLanguage />
             </SidebarRoute>
-          </SideBtnWrap>
+          </SideBtnWrap> */}
         </SideBarWrapper>
       </SidebarContainer>
     </>

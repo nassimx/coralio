@@ -37,7 +37,7 @@ const Services = () => {
         </FeatureTextWrapper>
         <FeatureWrapper>
           {services.map((el, index) => (
-            <LinkService to={`/services/${el._id}`}>
+            <LinkService to={`/services/${el.to}`}>
               <FeatureColumn
                 initial={initial}
                 animate={animate}

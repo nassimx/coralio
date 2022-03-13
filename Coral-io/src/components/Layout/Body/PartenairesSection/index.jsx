@@ -23,7 +23,7 @@ const PartenairesSection = () => {
   }, [dispatch]);
 
   const partenaires = useSelector((state) => state.partenaires);
-
+  // console.log(partenaires);
   const sliderSettings = {
     arrows: false,
     slidesToShow: 3,
@@ -33,6 +33,7 @@ const PartenairesSection = () => {
     pauseOnHover: true,
     focusOnselect: false,
     accessability: false,
+    infinite: false,
     responsive: [
       {
         breakpoint: 1280,

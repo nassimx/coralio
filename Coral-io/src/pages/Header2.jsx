@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../components/Layout/Header2/Navbar';
-import Sidebar from '../components/Layout/Header2/Sidebar';
 import { useState } from 'react';
 import { Outlet } from 'react-router';
+import Navbar2 from '../components/Layout/Header2/Navbar';
+import Sidebar2 from '../components/Layout/Header2/Sidebar';
 
 const Header2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +12,8 @@ const Header2 = () => {
   };
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Sidebar2 isOpen={isOpen} toggle={toggle} />
+      <Navbar2 toggle={toggle} />
       <Outlet />
     </>
   );

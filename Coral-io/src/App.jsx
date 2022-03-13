@@ -9,6 +9,7 @@ import Footer from './components/Layout/Footer';
 import Clients from './pages/Clients';
 import { useEffect } from 'react';
 import { ServiceDetails } from './components/Layout/Body/ServicesSection/ServiceDetails';
+import PageNotFound from './pages/PageNotFound';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,16 +31,17 @@ function App() {
       >
         <ScrollToTop />
         <Routes>
+          {/* <Route element={<Footer />}></Route> */}
           <Route element={<Header />}>
             <Route path="/" element={<Home />} />
           </Route>
           <Route element={<Header2 />}>
             <Route path="/clients" element={<Clients />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/services/:_id" element={<ServiceDetails />} />
+            <Route path="/services/:to" element={<ServiceDetails />} />
           </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
-        <Footer />
       </AnimatePresence>
     </>
   );

@@ -7,11 +7,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
   NavLinkR,
 } from './Navbar.Styles';
-import { FaBars } from 'react-icons/fa';
 import Logoimg from '../../../../../assets/cropped-logo_coralio-7.png-7-180x180.png';
 
 import { animateScroll as scroll } from 'react-scroll';
@@ -41,7 +38,7 @@ const Navbar2 = ({ toggle }) => {
             <Logo src={Logoimg} />
           </NavLogo>
           <MobileIcon onClick={toggle}>
-            <FaBars />
+            <i className="fa-solid fa-bars" />
           </MobileIcon>
           <NavMenu>
             <NavItem>
@@ -89,9 +86,6 @@ const Navbar2 = ({ toggle }) => {
               <NavLinkR to="/contact">Nous Écrire</NavLinkR>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink>{/* <GrLanguage /> */}</NavBtnLink>
-          </NavBtn>
         </NavBarContainer>
       </Nav>
     </>
