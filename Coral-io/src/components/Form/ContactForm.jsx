@@ -29,7 +29,6 @@ const ContactForm = () => {
   // };
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
 
       .sendForm(
@@ -50,6 +49,9 @@ const ContactForm = () => {
             draggable: true,
             progress: undefined,
           });
+          () => {
+            setLoading(false);
+          };
         },
         (error) => {
           console.log(error.text);
@@ -63,10 +65,13 @@ const ContactForm = () => {
             progress: undefined,
           });
         }
-      );
-
+      )
+      .then(() => {
+        setLoading(false);
+      });
     e.target.reset();
   };
+
   useEffect(() => {
     if (inView) {
       animation.start({

@@ -28,16 +28,20 @@ const Services = () => {
     dispatch(getServiceData());
   }, [dispatch]);
 
-  const services = useSelector((state) => state.services);
-  return (
+  const { services, isLoading } = useSelector((state) => state.services);
+  // console.log(services);
+
+  return isLoading ? (
+    'loading'
+  ) : (
     <Section smPadding="50px 10px" position="relative" inverse id="services">
       <Container>
         <FeatureTextWrapper>
           <FeatureTitle>Nos Services</FeatureTitle>
         </FeatureTextWrapper>
         <FeatureWrapper>
-          {services.map((el, index) => (
-            <LinkService to={`/services/${el.to}`}>
+          {services?.map((service, index) => (
+            <LinkService to={`/services/${service._id}`}>
               <FeatureColumn
                 initial={initial}
                 animate={animate}
@@ -49,12 +53,12 @@ const Services = () => {
                 whileTap={{ scale: 0.9 }}
                 key={index}
               >
-                <FeatureImageWrapper className={el.imgClass}>
-                  <i className={el.icon}></i>
+                <FeatureImageWrapper className={service.imgClass}>
+                  <i className={service.icon}></i>
 
                   {/* {el.icon} */}
                 </FeatureImageWrapper>
-                <FeatureName>{el.name}</FeatureName>
+                <FeatureName>{service.name}</FeatureName>
                 {/* <FeatureText>{el.description}</FeatureText> */}
               </FeatureColumn>
             </LinkService>

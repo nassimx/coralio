@@ -20,7 +20,7 @@ export const getHeroSection = async (req, res) => {
   }
 };
 
-export const getService = async (req, res) => {
+export const getServices = async (req, res) => {
   try {
     const serviceData = await ServiceSection.find();
 
@@ -29,6 +29,19 @@ export const getService = async (req, res) => {
     res.status(404).json({ message: error.message });
   }
 };
+
+export const getService = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const service = await ServiceSection.findById(id);
+
+    res.status(200).json(service);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+};
+
 export const getClientSec = async (req, res) => {
   try {
     const clientsecData = await ClientSec.find();

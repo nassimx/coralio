@@ -2,15 +2,17 @@ import mongoose from 'mongoose';
 
 const serviceSchema = new mongoose.Schema({
   title: String,
-  subtitle: String,
+  name: String,
   description: String,
-  buttonLabel: String,
+  icon: String,
+  subtitle: String,
+  to: String,
   createdAt: {
     type: Date,
     default: new Date(),
   },
 });
 
-var ServiceSection = mongoose.model('ServiceSection', serviceSchema );
+var ServiceSection = mongoose.model('ServiceSection', serviceSchema);
 
 export default ServiceSection;

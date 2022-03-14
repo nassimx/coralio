@@ -13,5 +13,5 @@ export default combineReducers({
   clientsec,
   partenaires,
   contact,
-  clients
+  clients,
 });

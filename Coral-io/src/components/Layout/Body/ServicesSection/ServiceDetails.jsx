@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import servimg from '../../../../..//assets/services.jpeg';
 import imgerror from '../../../../../assets/pageerror.png';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+
 import {
   Container,
   HeroBg,
@@ -11,7 +12,9 @@ import {
   Section,
   ServImgBg,
 } from '../../../../globalStyles';
-import { getServiceData } from '../../../../redux/actions/posts';
+// import { getServiceData } from '../../../../redux/actions/posts';
+import { getService } from '../../../../redux/actions/posts';
+
 import {
   EncoursImg,
   FeatureTextWrapper,
@@ -23,20 +26,18 @@ import {
 } from './ServicesSection.Styles';
 import Footer from '../../Footer';
 export const ServiceDetails = () => {
-  const params = useParams();
-  // console.log(params._id);
+  // console.log(serviceId.to);
+  const { services, service } = useSelector((state) => state.services);
   const dispatch = useDispatch();
+  const history = useNavigate();
+  const { id } = useParams();
 
   useEffect(() => {
-    dispatch(getServiceData());
-  }, [dispatch]);
+    dispatch(getService(id));
+  }, [id]);
 
-  const services = useSelector((state) => state.services);
-  const service = services.find(
-    (service) => service.to.toString() === params.to
-  );
+  if (!service) return null;
 
-  // console.log(service);
   return (
     <>
       <HeroContainer>

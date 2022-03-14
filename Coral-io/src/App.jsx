@@ -38,7 +38,7 @@ function App() {
           <Route element={<Header2 />}>
             <Route path="/clients" element={<Clients />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/services/:to" element={<ServiceDetails />} />
+            <Route path="/services/:id" element={<ServiceDetails />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
