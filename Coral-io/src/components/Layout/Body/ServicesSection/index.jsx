@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Container, Section } from '../../../../globalStyles';
+import { Container, Section, SpinnerDiv } from '../../../../globalStyles';
 import {
   FeatureTitle,
   FeatureWrapper,
@@ -32,7 +32,11 @@ const Services = () => {
   // console.log(services);
 
   return isLoading ? (
-    'loading'
+    <>
+      <SpinnerDiv>
+        <i className="fa fa-spinner fa-spin fa-3x fa-fw" />
+      </SpinnerDiv>
+    </>
   ) : (
     <Section smPadding="50px 10px" position="relative" inverse id="services">
       <Container>

@@ -7,6 +7,7 @@ import {
   HeroContent,
   ImgBg,
   Section,
+  SpinnerDiv,
 } from '../globalStyles';
 
 import ClientBg from '../../assets/1.jpeg';
@@ -51,7 +52,11 @@ const Clients = () => {
         <HeroContent />
       </HeroContainer>
       {isLoading ? (
-        'Chargement ...'
+        <>
+          <SpinnerDiv>
+            <i className="fa fa-spinner fa-spin fa-3x fa-fw" />
+          </SpinnerDiv>
+        </>
       ) : (
         <Section
           smPadding="50px 10px"

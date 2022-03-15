@@ -40,7 +40,7 @@ export const getService = (id) => async (dispatch) => {
     const { data } = await api.fetchOneService(id);
 
     dispatch({ type: FETCH_ONESERVICE, payload: { service: data } });
-    dispatch({ type: END_LOADING });
+    // dispatch({ type: END_LOADING });
   } catch (error) {
     console.log(error.message);
   }

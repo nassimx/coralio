@@ -288,4 +288,14 @@ export const ServImgBg = styled.img`
   }
 `;
 
+export const SpinnerDiv = styled.div`
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 100px;
+  /* height: 300px; */
+  position: relative;
+  z-index: 1;
+`;
 export default GlobalStyle;
