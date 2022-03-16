@@ -20,7 +20,7 @@ const Recrutement = () => {
   }, [dispatch]);
 
   const { recrutement, isLoading } = useSelector((state) => state.recrutement);
-  console.log(recrutement);
+  // console.log(recrutement);
   return (
     <>
       <HeroContainer>
@@ -46,11 +46,17 @@ const Recrutement = () => {
             <FeatureTextWrapper>
               <FeatureTitle>Nous Rejoindre</FeatureTitle>
             </FeatureTextWrapper>
-            {/* {recrutement?.map((el, index) => (
+            {recrutement?.map((offre, index) => (
               <>
-                <h1>work</h1>
+                <div key={index}>
+                  <h1>{offre.titre}</h1>
+                  <h2>{offre.contrat}</h2>
+                  <h1>{offre.titre2}</h1>
+                  <h2>{offre.connaissances}</h2>
+                  <h4>{offre.desc}</h4>
+                </div>
               </>
-            ))} */}
+            ))}
           </Container>
         </Section>
       )}
