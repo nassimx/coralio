@@ -10,7 +10,7 @@ import Clients from './pages/Clients';
 import { useEffect } from 'react';
 import { ServiceDetails } from './components/Layout/Body/ServicesSection/ServiceDetails';
 import PageNotFound from './pages/PageNotFound';
-import Recrutement from './pages/recrutement';
+import Recrutement from './pages/Recrutement';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
