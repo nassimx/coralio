@@ -46,11 +46,11 @@ const Recrutement = () => {
             <FeatureTextWrapper>
               <FeatureTitle>Nous Rejoindre</FeatureTitle>
             </FeatureTextWrapper>
-            {recrutement?.map((el, index) => (
+            {/* {recrutement?.map((el, index) => (
               <>
-              
+                <h1>work</h1>
               </>
-            ))}
+            ))} */}
           </Container>
         </Section>
       )}
