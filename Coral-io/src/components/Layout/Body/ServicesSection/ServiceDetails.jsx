@@ -104,7 +104,7 @@ export const ServiceDetails = () => {
           );
         }
       })()}
-      <EncoursImg src={imgerror} alt="En cours de construction" width="200" />
+      {/* <EncoursImg src={imgerror} alt="En cours de construction" width="200" /> */}
       <Footer />
     </>
   );

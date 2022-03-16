@@ -10,7 +10,7 @@ export const FeatureTitle = styled.h2`
   margin: auto;
   /* padding: 40px 0 0 0; */
 `;
-export const ServiceTitle = styled.h2`
+export const ServiceTitle = styled(motion.h2)`
   text-align: center;
   font-size: clamp(1.3rem, 13vw, 3.1rem);
   line-height: 1.06;
@@ -122,7 +122,7 @@ export const ImgService = styled.img`
   /* margin-top: 150px; */
   shape-margin: 15px;
 `;
-export const Servtext = styled.p`
+export const Servtext = styled(motion.p)`
   position: relative;
   /* padding: 10px 20px 10px 20px; */
   /* margin-bottom: 2rem; */
@@ -141,7 +141,7 @@ export const Servtext = styled.p`
   }
 `;
 
-export const TextUl = styled.ul`
+export const TextUl = styled(motion.ul)`
   position: relative;
   padding: 0px 0px 10px 30px;
   /* margin-bottom: 2rem; */
@@ -160,7 +160,7 @@ export const TextUl = styled.ul`
   }
 `;
 
-export const ServDesc = styled.p`
+export const ServDesc = styled(motion.p)`
   position: relative;
   /* padding: 10px 20px 10px 20px; */
   /* margin-bottom: 2rem; */
@@ -179,7 +179,7 @@ export const ServDesc = styled.p`
   }
 `;
 
-export const ServiceIcon = styled.div`
+export const ServiceIcon = styled(motion.div)`
   position: relative;
   border-radius: 50%;
 
@@ -271,16 +271,16 @@ export const GridDiv = styled.div`
     display: block;
   }
 `;
-export const Div1 = styled.div`
+export const Div1 = styled(motion.div)`
   /* background: red; */
   /* margin: 10px; */
 `;
-export const Div2 = styled.div`
+export const Div2 = styled(motion.div)`
   /* background: blue; */
   /* margin: 10px; */
 `;
 
-export const GridDivApm = styled.div`
+export const GridDivApm = styled(motion.div)`
   background: #fff;
   max-width: 1200px;
   display: grid;
@@ -290,15 +290,15 @@ export const GridDivApm = styled.div`
     display: block;
   }
 `;
-export const Divapm1 = styled.div`
+export const Divapm1 = styled(motion.div)`
   /* background: red; */
   /* margin: 10px; */
 `;
-export const Divapm2 = styled.div`
+export const Divapm2 = styled(motion.div)`
   /* background: blue; */
   /* margin: 10px; */
 `;
-export const Divapm3 = styled.div`
+export const Divapm3 = styled(motion.div)`
   /* background: gray; */
   display: grid;
 
@@ -309,12 +309,12 @@ export const Divapm3 = styled.div`
     display: block;
   }
 `;
-export const Divapm4 = styled.div`
+export const Divapm4 = styled(motion.div)`
   /* background: yellow; */
   /* margin: 10px; */
 `;
 
-export const Divapm5 = styled.div`
+export const Divapm5 = styled(motion.div)`
   /* background: yellow; */
   /* margin: 10px; */
 `;
