@@ -7,6 +7,7 @@ import ClientSec from '../models/clientsecSchema.js';
 import PartenaireSec from '../models/partenaireSchema.js';
 import ContactSec from '../models/contactSchema.js';
 import ClientS from '../models/clientsSchema.js';
+import RecrutementSection from '../models/offreSchema.js';
 
 const router = express.Router();
 
@@ -61,6 +62,17 @@ export const getPartenaires = async (req, res) => {
     res.status(404).json({ message: error.message });
   }
 };
+
+export const getRecrutement = async (req, res) => {
+  try {
+    const recrutementData = await RecrutementSection.find();
+
+    res.status(200).json(recrutementData);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+};
+
 export const getContact = async (req, res) => {
   try {
     const contactData = await ContactSec.find();

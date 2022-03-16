@@ -8,6 +8,7 @@ import {
   getContact,
   getClients,
   getService,
+  getRecrutement,
 } from '../controllers/herosectionController.js';
 
 const router = express.Router();
@@ -21,6 +22,8 @@ router.get('/clientsec', getClientSec);
 router.get('/clients', getClients);
 
 router.get('/partenaires', getPartenaires);
+
+router.get('/recrutement', getRecrutement);
 
 router.get('/contact', getContact);
 

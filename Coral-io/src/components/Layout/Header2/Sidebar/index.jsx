@@ -49,6 +49,10 @@ const Sidebar2 = ({ isOpen, toggle }) => {
             <SidebarLink to="/" onClick={toggleDown}>
               Nos Partenaires
             </SidebarLink>
+            <ContactSidebarLink to="/recrutement">
+              Nous Rejoindre
+            </ContactSidebarLink>
+
             <ContactSidebarLink to="/contact">Nous Écrire</ContactSidebarLink>
           </SidebarMenu>
         </SideBarWrapper>

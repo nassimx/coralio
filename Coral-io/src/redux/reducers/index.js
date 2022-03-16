@@ -6,6 +6,7 @@ import clientsec from './clientsec';
 import partenaires from './partenaires';
 import contact from './contact';
 import clients from './clients';
+import recrutement from './recrutement';
 
 export default combineReducers({
   posts,
@@ -14,4 +15,5 @@ export default combineReducers({
   partenaires,
   contact,
   clients,
+  recrutement,
 });

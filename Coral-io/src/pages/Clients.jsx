@@ -13,7 +13,6 @@ import {
 import ClientBg from '../../assets/1.jpeg';
 
 import {
-  FeatureColumn,
   FeatureImageWrapper,
   FeatureTextWrapper,
   FeatureTitle,
@@ -34,7 +33,8 @@ const Clients = () => {
   }, [dispatch]);
 
   const { clients, isLoading } = useSelector((state) => state.clients);
-  console.log(clients);
+
+  // console.log(clients);
   const initial = {
     y: 40,
     opacity: 0,

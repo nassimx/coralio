@@ -298,4 +298,19 @@ export const SpinnerDiv = styled.div`
   position: relative;
   z-index: 1;
 `;
+
+export const RecImgBg = styled.img`
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #fff;
+  object-position: 60% 40%;
+  @media screen and (max-width: 960px) {
+    /* height: 30%; */
+  }
+  @media screen and (max-width: 460px) {
+    /* height: 20%; */
+  }
+`;
 export default GlobalStyle;

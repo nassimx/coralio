@@ -83,6 +83,9 @@ const Navbar2 = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
+              <NavLinkR to="/recrutement">Nous Rejoindre</NavLinkR>
+            </NavItem>
+            <NavItem>
               <NavLinkR to="/contact">Nous Écrire</NavLinkR>
             </NavItem>
           </NavMenu>

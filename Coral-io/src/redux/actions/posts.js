@@ -8,6 +8,7 @@ import {
   FETCH_ONESERVICE,
   START_LOADING,
   END_LOADING,
+  FETCH_RECRUTEMENT,
 } from '../constants/actionTypes';
 
 import * as api from '../../api/index.js';
@@ -71,6 +72,18 @@ export const getPartenaires = () => async (dispatch) => {
   }
 };
 
+export const getRecrutement = () => async (dispatch) => {
+  try {
+    dispatch({ type: START_LOADING });
+
+    const { data } = await api.fetchRecrutement();
+
+    dispatch({ type: FETCH_RECRUTEMENT, payload: data });
+    dispatch({ type: END_LOADING });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
 export const getContact = () => async (dispatch) => {
   try {
     dispatch({ type: START_LOADING });

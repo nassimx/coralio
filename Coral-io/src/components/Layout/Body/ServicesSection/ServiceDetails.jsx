@@ -5,30 +5,16 @@ import imgerror from '../../../../../assets/pageerror.png';
 import { useParams, useNavigate } from 'react-router-dom';
 
 import {
-  Container,
   HeroBg,
   HeroContainer,
   HeroContent,
-  Section,
+
   ServImgBg,
   SpinnerDiv,
 } from '../../../../globalStyles';
 // import { getServiceData } from '../../../../redux/actions/posts';
 import { getService } from '../../../../redux/actions/posts';
 
-import {
-  DivIcon,
-  EncoursImg,
-  FeatureTextWrapper,
-  FeatureTitle,
-  GoToLink,
-  ImgService,
-  ServDesc,
-  ServiceIcon,
-  ServiceTitle,
-  Textimagexwrap,
-  TextUl,
-} from './ServicesSection.Styles';
 import Footer from '../../Footer';
 import ServiceDetailsAll from './ServiceDetailsAll';
 import Apm from './Apm';

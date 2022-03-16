@@ -303,7 +303,9 @@ export const Divapm3 = styled(motion.div)`
   display: grid;
 
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(120px, auto);
+  grid-auto-rows: minmax(auto, auto);
+  grid-gap: 20px;
+
   padding: 10px;
   @media (max-width: 768px) {
     display: block;
