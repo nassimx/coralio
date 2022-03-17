@@ -76,12 +76,6 @@ export const ServiceDetails = () => {
               <Apm service={service} />
             </>
           );
-        } else if (id === '6228e8cc2d809d54aff96d4c') {
-          return (
-            <>
-              <Microfocus service={service} />
-            </>
-          );
         } else {
           return (
             <>

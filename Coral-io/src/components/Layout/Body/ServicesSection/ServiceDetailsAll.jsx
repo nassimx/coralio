@@ -50,7 +50,7 @@ const ServiceDetailsAll = ({ service }) => {
     }
   }, [inView, animation]);
   return (
-    <div>
+    <>
       <Section smPadding="50px 10px" position="relative" inverse ref={ref}>
         <DivIcon>
           <ServiceIcon
@@ -87,7 +87,7 @@ const ServiceDetailsAll = ({ service }) => {
           {/* <EncoursImg src={imgerror} alt="En cours de construction" /> */}
         </Container>
       </Section>
-    </div>
+    </>
   );
 };
 

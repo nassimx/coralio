@@ -313,4 +313,125 @@ export const RecImgBg = styled.img`
     /* height: 20%; */
   }
 `;
+export const RecrutementWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 4rem;
+  grid-gap: 2rem;
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 3rem;
+  }
+  @media screen and (max-width: 568px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+export const RecrutementColumn = styled(motion.div)`
+  display: flex;
+  flex-flow: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background: #f3f3f3;
+  padding: 20px;
+  box-shadow: 0 0 32px 8px #d0d0d0;
+  border-radius: 20px;
+  /* @media (max-width: 768px) {
+    display: block;
+  } */
+`;
+
+export const RecrutementDiv = styled.div`
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px;
+`;
+
+export const IconTextDiv = styled.div`
+  display: grid;
+  grid-auto-flow: column;
+  padding: 1rem;
+  color: #cf1717;
+
+  /* align-items: center; */
+  /* text-align: center; */
+  /* grid-column-gap: 100px; */
+  @media (max-width: 768px) {
+    display: inline-block;
+  }
+`;
+
+export const IconTextWrapper = styled.div`
+  display: inline-block;
+`;
+export const IconText = styled.div`
+  display: grid;
+  grid-auto-flow: column;
+  padding: 2rem;
+  grid-column-gap: 100px;
+  /* @media (max-width: 768px) {
+    display: block;
+  } */
+`;
+
+export const IconSpan = styled.span`
+  padding: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    display: inline-block;
+  }
+`;
+
+export const RecBtnWrapper = styled.div`
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+export const RecButton = styled(motion.button)`
+  height: 3rem;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 18px;
+  letter-spacing: 1.54px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  color: #ff7f50;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
+  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+  outline: none;
+  border: 2px solid #ff7f50;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    background: #ff7f50;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:hover:before {
+    height: 500%;
+  }
+  &:hover {
+    color: ${({ inverse }) => (inverse ? 'white' : 'black')};
+  }
+`;
+
 export default GlobalStyle;
