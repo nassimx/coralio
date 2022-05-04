@@ -81,7 +81,7 @@ export const Heading = styled(motion.h2)`
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ inverse }) => (inverse ? '#343837' : 'white')};
+  color: ${({ inverse }) => (inverse ? 'black' : 'white')};
   @media screen and (max-width: 768px) {
     text-align: center;
   }

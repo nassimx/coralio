@@ -53,7 +53,9 @@ const Sidebar2 = ({ isOpen, toggle }) => {
               Nous Rejoindre
             </ContactSidebarLink>
 
-            <ContactSidebarLink to="/contact">Nous Écrire</ContactSidebarLink>
+            <ContactSidebarLink to="/contact">
+              Nous Contacter
+            </ContactSidebarLink>
           </SidebarMenu>
         </SideBarWrapper>
       </SidebarContainer>

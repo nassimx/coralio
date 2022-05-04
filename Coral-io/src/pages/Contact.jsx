@@ -36,7 +36,7 @@ const Contact = () => {
       <Section smPadding="50px 10px" position="relative" inverse>
         <ContactContainer>
           <FeatureTextWrapper>
-            <FeatureTitle>Nous Écrire</FeatureTitle>
+            <FeatureTitle>Nous Contacter</FeatureTitle>
           </FeatureTextWrapper>
           <ContainerContact wrapper>
             <CompanyInfo />

@@ -70,7 +70,9 @@ const Sidebar = ({ isOpen, toggle }) => {
             <ContactSidebarLink to="/recrutement">
               Nous Rejoindre
             </ContactSidebarLink>
-            <ContactSidebarLink to="/contact">Nous Écrire</ContactSidebarLink>
+            <ContactSidebarLink to="/contact">
+              Nous Contacter
+            </ContactSidebarLink>
           </SidebarMenu>
           {/* <SideBtnWrap>
             <SidebarRoute to="/" onClick={toggle}>

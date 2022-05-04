@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://91.134.28.235/api' });
+const API = axios.create({ baseURL: 'https://coral-io.fr/api' });
 
 // const url = axios.create({ baseURL: process.env.REACT_APP_API_URL });
 

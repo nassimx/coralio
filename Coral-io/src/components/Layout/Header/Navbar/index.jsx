@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
               <NavLinkR to="/recrutement">Nous Rejoindre</NavLinkR>
             </NavItem>
             <NavItem>
-              <NavLinkR to="/contact">Nous Écrire</NavLinkR>
+              <NavLinkR to="/contact">Nous Contacter</NavLinkR>
             </NavItem>
           </NavMenu>
         </NavBarContainer>

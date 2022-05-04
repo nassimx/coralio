@@ -144,6 +144,8 @@ export const Servtext = styled(motion.p)`
 export const TextUl = styled(motion.ul)`
   position: relative;
   padding: 0px 0px 10px 30px;
+  /* text-align: justify; */
+
   /* margin-bottom: 2rem; */
   font-weight: 500;
   font-size: 18px;
